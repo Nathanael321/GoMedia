@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>GoMedia</title>
+</head>
+
+<body>
+	<h1>Welcome <%- name %>!</h1>
+
+	<hr> 
+	
+	<form action="/searchFeed" method="post">
+		<p>Search: <input type="text" name="search"> <input type="submit" value="Go!"></p>
+	</form>
+	
+	<%- feed %>
+    
+	<hr>
+	<a href="/account">My Account</a> 
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>GoMedia | <%- title %></title>
+</head>
+
+<body>
+	<h1><%- title %></h1>
+
+	<hr> 
+	
+	<%- poster %>
+    <p><strong>Released: </strong><%- released %></p>
+    <strong>Description: </strong><%- description %>
+    <br>
+    <br>
+
+    <form action="/feed" method="post">
+        <strong>Add to favorites?</strong> <%- checkbox %> 
+        <br>
+        <p style='font-size:0.8em;'>If already in favorites and want to remove, uncheck the box.</p>
+        <br>
+        <input type="submit" value="Back to Feed">
+    </form>
+
+	<hr>
+    
+	<a href="/account">My Account</a> 
+</body>
+
+</html>

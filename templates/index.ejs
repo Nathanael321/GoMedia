@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>GoMedia</title>
+</head>
+
+<body>
+	<h1>Welcome to GoMedia!</h1>
+
+    <p>Where you can search, save, and get recommended to movies and TV shows!!</p>
+
+    <%- error %>
+
+    <form action="/feed" method="post">
+        <fieldset>
+            <legend><strong>Log In</strong></legend>
+            Username: <input type="text" name="username">
+            Password: <input type="password" name="password">
+            <input type="submit" value="Log In"/>
+        </fieldset>
+    </form>
+
+    Don't have an account? <a href="/signup">Sign Up</a>
+    
+</body>
+
+</html>
